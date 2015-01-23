@@ -1,6 +1,8 @@
 # fbcunn-torch7-teslaK40-titanblack
 
-It was not easy getting to high-end Invidia GPUs in the same system :)  I hope these instructions and examples are useful to any of you having similar problems getting a system like this up and running.  I've also included examples that demonstrate the full power of the FBCunn Torch7 Deep Learning library.
+I run Deep machine learning algorithms on a system with super high end GPU cards from Invidia. It wasn't easy getting that up and running :)  I hope these instructions and examples are useful to any of you having issues yourself.  
+
+I've also included examples that demonstrate the full power of the FBCunn Torch7 Deep Learning library.
 
 [ This is a work in progress so bear with me...]
 
