@@ -45,9 +45,11 @@ I've also included examples that demonstrate the full power of the FBCunn Torch7
 
 [ TBD ]
 
-## iTorch/Train_ConvNet_On_Cifar_GPU
+## iTorch/ConvNet_On_Cifar_GPU
 
 This is an iTorch script, based entirely on Soumith Chantala's example [ LINK ], presented at the NextML Workshop at Galvanize SOMA in January 2015.  I've made a few changes which demonstrate how to marshal tensors to the GPU memory.
+
+## iTorch/Siamese_On_Pose_GPU
 
 ### Download The Sample Data
 
