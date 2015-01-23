@@ -45,6 +45,12 @@ It was not easy getting to high-end Invidia GPUs in the same system :)  I hope t
 
 ## iTorch/Train_ConvNet_On_Cifar_GPU
 
-This is an iTorch script, based entirely on Soumith Chantala's example, presented at the NextML Workshop at Galvanize SOMA in January 2015.  I've made a few changes which demonstrate how to marshal tensors to the GPU memory.
+This is an iTorch script, based entirely on Soumith Chantala's example [ LINK ], presented at the NextML Workshop at Galvanize SOMA in January 2015.  I've made a few changes which demonstrate how to marshal tensors to the GPU memory.
+
+### Download The Sample Data
+
+[ Instructions ]
+
+### Run ITorch Script
 
 [ Instructions ]
