@@ -95,7 +95,7 @@ The following will install the cuda source code into your home directory:
 cd ~/NVIDIA_CUDA-6.5_Samples; make
 ```
 
-## Running DeviceQuery
+## Run DeviceQuery
 ```
 cd ~/NVIDIA_CUDA-6.5_Samples/1_Utilities/deviceQuery; ./deviceQuery
 ```
