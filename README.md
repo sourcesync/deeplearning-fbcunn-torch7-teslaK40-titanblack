@@ -36,9 +36,11 @@ You should see your NVidia Graphics card(s) and its PCI Address.  For example, m
 ...
 ```
 
-## Installing The Cuda Drive
+## Installing The Cuda Driver
 
-[ TBD ]
+### Cuda 6.5
+
+Download the DEB package file from NVidia called [cuda-repo-ubuntu1404_6.5-14_amd64.deb](https://developer.nvidia.com/cuda-downloads)
 
 ## Installing the Cuda Sample Code
 
