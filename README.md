@@ -65,6 +65,7 @@ Run nvidia-smi:
 nvidia-smi
 ```
 You should see something like this:
+```
 +------------------------------------------------------+                       
 | NVIDIA-SMI 340.65     Driver Version: 340.65         |                       
 |-------------------------------+----------------------+----------------------+
@@ -81,6 +82,7 @@ You should see something like this:
 |=============================================================================|
 |  No running compute processes found                                         |
 +-----------------------------------------------------------------------------+
+```
 
 ## Install the Cuda Sample Code
 
