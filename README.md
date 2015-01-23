@@ -88,7 +88,7 @@ You should see something like this:
 
 The following will install the cuda source code into your home directory:
 ```
-sudo /usr/local/cuda/bin/cuda-install-samples-6.5.sh ~
+/usr/local/cuda/bin/cuda-install-samples-6.5.sh ~
 ```
 ## Build the Cuda Sample Code
 ```
@@ -153,7 +153,7 @@ cd ipython-2.3.1; sudo python setup.py
 
 ## Installing Facebook FAIR Torch7 Deep Learning Libraries
 
-Follow the Soumith Chantala's excellent instructions here
+Follow the [Soumith Chintala's](https://github.com/soumith) excellent instructions here
 
 # Examples
 
@@ -161,7 +161,7 @@ Follow the Soumith Chantala's excellent instructions here
 
 ## iTorch/ConvNet_On_Cifar_GPU
 
-This is an iTorch script, based entirely on Soumith Chantala's excellent example [ LINK ], presented at the NextML Workshop at Galvanize SOMA in January 2015.  I've made a few changes which demonstrate how to marshal tensors to the GPU memory.
+This is an iTorch script, based entirely on [Soumith Chantala's](https://github.com/soumith) excellent [example](https://github.com/soumith/nextml), presented at the NextML Workshop at Galvanize SOMA in January 2015.  I've made a few changes which demonstrate how to marshal tensors to the GPU memory and how to use the GPU for optimization.
 
 ## iTorch/Siamese_On_Pose_GPU
 
