@@ -14,6 +14,8 @@ If you are up and running, then checkout my examples below.  They should be usef
 * One or both already installed:
     *  TeslaK40 NVidia Graphics Card
     *  Titan Black NVidia Graphics Card
+* GCC development environment
+* Uninstall any previous cuda libraries, drivers, and source code
 
 ## Updating Ubuntu
 
@@ -36,27 +38,120 @@ You should see your NVidia Graphics card(s) and its PCI Address.  For example, m
 ...
 ```
 
-## Installing The Cuda Driver
-
-### Cuda 6.5
+## Installing The Cuda 6.5 Driver
 
 Download the DEB package file from NVidia called [cuda-repo-ubuntu1404_6.5-14_amd64.deb](https://developer.nvidia.com/cuda-downloads)
 
-## Installing the Cuda Sample Code
+Run the following command to determine uninstalled dependencies:
+```
+sudo dpkg -i cuda-repo-ubuntu1404_6.5-14_amd64.deb
+```
+Install the dependencies:
+```
+sudo apt-get install -f
+```
+Install cuda:
+```
+sudo dpkg -i cuda-repo-ubuntu1404_6.5-14_amd64.deb
+```
 
-[ TBD ]
+## Test The Cuda Driver
+Install the nvidia-smi utilities
+```
+sudo apt-get install nvidia-smi
+```
+Run nvidia-smi:
+```
+nvidia-smi
+```
+You should see something like this:
++------------------------------------------------------+                       
+| NVIDIA-SMI 340.65     Driver Version: 340.65         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K40c          Off  | 0000:05:00.0     Off |                    0 |
+| 23%   32C    P0    63W / 235W |     23MiB / 11519MiB |    100%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Compute processes:                                               GPU Memory |
+|  GPU       PID  Process name                                     Usage      |
+|=============================================================================|
+|  No running compute processes found                                         |
++-----------------------------------------------------------------------------+
+
+## Install the Cuda Sample Code
+
+The following will install the cuda source code into your home directory:
+```
+sudo /usr/local/cuda/bin/cuda-install-samples-6.5.sh ~
+```
+## Build the Cuda Sample Code
+```
+cd ~/NVIDIA_CUDA-6.5_Samples; make
+```
 
 ## Running DeviceQuery
+```
+cd ~/NVIDIA_CUDA-6.5_Samples/1_Utilities/deviceQuery; ./deviceQuery
+```
+You should see something like this:
+```
+ CUDA Device Query (Runtime API) version (CUDART static linking)
 
-[ TBD ]
+Detected 1 CUDA Capable device(s)
+
+Device 0: "Tesla K40c"
+  CUDA Driver Version / Runtime Version          6.5 / 6.5
+  CUDA Capability Major/Minor version number:    3.5
+  Total amount of global memory:                 11520 MBytes (12079136768 bytes)
+  (15) Multiprocessors, (192) CUDA Cores/MP:     2880 CUDA Cores
+  GPU Clock rate:                                745 MHz (0.75 GHz)
+  Memory Clock rate:                             3004 Mhz
+  Memory Bus Width:                              384-bit
+  L2 Cache Size:                                 1572864 bytes
+  Maximum Texture Dimension Size (x,y,z)         1D=(65536), 2D=(65536, 65536), 3D=(4096, 4096, 4096)
+  Maximum Layered 1D Texture Size, (num) layers  1D=(16384), 2048 layers
+  Maximum Layered 2D Texture Size, (num) layers  2D=(16384, 16384), 2048 layers
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per multiprocessor:  2048
+  Maximum number of threads per block:           1024
+  Max dimension size of a thread block (x,y,z): (1024, 1024, 64)
+  Max dimension size of a grid size    (x,y,z): (2147483647, 65535, 65535)
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and kernel execution:          Yes with 2 copy engine(s)
+  Run time limit on kernels:                     No
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support:                        Enabled
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           5 / 0
+  Compute Mode:
+     < Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) >
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 6.5, CUDA Runtime Version = 6.5, NumDevs = 1, Device0 = Tesla K40c
+Result = PASS
+```
 
 ## Installing IPython
 
-[ TBD ]
+### IPython 2.3.1 tarball
+
+Locate the IPython 2.3.1 tarball.  Download it, unpack it, and install it:
+```
+cd ipython-2.3.1; sudo python setup.py
+```
 
 ## Installing Facebook FAIR Torch7 Deep Learning Libraries
 
-[ TBD ]
+Follow the Soumith Chantala's excellent instructions here
 
 # Examples
 
