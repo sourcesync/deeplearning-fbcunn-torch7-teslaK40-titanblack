@@ -157,21 +157,30 @@ Follow the [Soumith Chintala's](https://github.com/soumith) excellent instructio
 
 # Examples
 
-[ TBD ]
-
 ## iTorch/ConvNet_On_Cifar_GPU
 
 This is an iTorch script, based entirely on [Soumith Chantala's](https://github.com/soumith) excellent [example](https://github.com/soumith/nextml), presented at the [NextML Workshop](http://www.next.ml/) at Galvanize SOMA in January 2015.  I've made a few changes which demonstrate how to marshal tensors to the GPU memory and how to use the GPU for optimization.
 
-## iTorch/Siamese_On_Pose_GPU
 
 ### Download The Sample Data
 
-[ Instructions ]
+Use the lua script [here](https://github.com/torch/tutorials/blob/master/A_datasets/cifar10.lua) and place the dataset in ~/DATA.
 
 ### Run ITorch Script
 
-[ Instructions ]
+Run itorch in the iTorch example directory:
+```
+cd iTorch; itorch notebook
+```
+Run the example as follows:
+```
+cd iTorch/ConvNet_On_Cifar_GPU.pynb
+```
+At this point, the example lua code should appear in a browser tab and you can run it in the ipython notebook way.
+```
+
+## iTorch/Siamese_On_Pose_GPU
+
 
 # Docker Images
 
