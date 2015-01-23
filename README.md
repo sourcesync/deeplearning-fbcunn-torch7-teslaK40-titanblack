@@ -17,11 +17,24 @@ If you are up and running, then checkout my examples below.  They should be usef
 
 ## Updating Ubuntu
 
-[ TBD ]
+Run the following command:
+```
+sudo apt-get update
+```
 
 ## Checking Your Hardware
 
-[ TBD ]
+Run the following command:
+```
+lspci
+```
+You should see your NVidia Graphics card(s) and its PCI Address.  For example, my K40 looks like this:
+
+```
+...
+05:00.0 3D controller: NVIDIA Corporation GK110BGL [Tesla K40c] (rev a1)
+...
+```
 
 ## Installing The Cuda Drive
 
