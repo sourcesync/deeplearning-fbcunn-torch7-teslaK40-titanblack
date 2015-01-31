@@ -2,7 +2,9 @@
 
 I run Deep machine learning algorithms on a system with super high end GPU cards from Invidia. It wasn't easy getting that up and running :)  I hope these instructions and examples are useful to any of you having trouble getting your cards working.
 
-If you are up and running, then checkout my examples below.  They should be useful starting points for your own work.
+Once you are up and running, check out the following examples:
+*  CIFAR
+*  Siamese Dimension Reduction
 
 [ This is a work in progress so bear with me...]
 
@@ -82,6 +84,11 @@ You should see something like this:
 |=============================================================================|
 |  No running compute processes found                                         |
 +-----------------------------------------------------------------------------+
+```
+
+## Load the UVM drive
+```
+sudo modprobe nvidia-340-uvm
 ```
 
 ## Install the Cuda Sample Code
